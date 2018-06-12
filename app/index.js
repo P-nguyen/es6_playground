@@ -1,1 +1,6 @@
-console.log('App working: open app/index.js to start exploring ES6');
+import { addParagraph } from './helpers';
+import SuperPerson from './person';
+
+const peter = new SuperPerson('Peter', 'SUPER BUNDURU');
+addParagraph( peter.talk('BUNDURU!') );
+addParagraph( peter.saySuperPower());
